@@ -1,8 +1,6 @@
-﻿#LIVE ON JESTER Version 0.7
-
 #Change Log
 <#
-    2014.4.20 - Added "$pdfname-Extracted" to output file name to avoid naming conflicts
+    2017.4.20 - Added "$pdfname-Extracted" to output file name to avoid naming conflicts
     2017.4.19 - Added exit if no page labels exist 
     
 #>
