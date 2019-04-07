@@ -186,7 +186,7 @@ Function get-Filename($initialDir) {
 $sourcePDFPath = get-Filename -initialDir $env:USERPROFILE\Desktop
 
 #import dll
-Add-Type -Path $dir\lib\itextsharp.dll
+Add-Type -Path $dir\itextsharp.dll
 
 #test document opening
 try{
