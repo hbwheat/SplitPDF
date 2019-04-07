@@ -1,4 +1,3 @@
-#DEV ON JESTER Version 1.0.2
 
 #Change Log
 <#
@@ -34,11 +33,12 @@ Write-Host "Launching Split PDFs Utility...."
 
 #TODO: $use some kind of env variable to get the root of the folder
 #these needs to be set manually right now
-$dir = "\\Jester\Software\Miscellaneous\Scripts\SplitPDFs"
+$dir = (Get-Location)
+
 
 #REF: https://www.codeproject.com/Articles/559380/Splitting-and-Merging-PDF-Files-in-Csharp-Using-iT
 #REF: for C#
-Add-Type -ReferencedAssemblies "$dir\lib\itextsharp.dll" -typedefinition @"
+Add-Type -ReferencedAssemblies "$dir\itextsharp.dll" -typedefinition @"
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using System;
